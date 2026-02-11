@@ -12,14 +12,14 @@ export default function Priser() {
       items: [
         { name: 'Dam klippning (ink, tvätt & fön)', price: '750 kr', duration: '60 min' },
         { name: 'Herr klippning', price: '650 kr', duration: '60 min' },
-        { name: 'Barn klippning (0-9 år)', price: '390 kr', duration: '30 min' },
+        { name: 'Barn klippning (0-9 år)', price: 'från 390 kr', duration: '30 min' },
         { name: 'Maskinklippning', price: '420 kr', duration: '30 min' },
       ],
     },
     {
       category: 'Färgning',
       items: [
-        { name: 'Helfärgning', price: '1200 kr', duration: '90 min' },
+        { name: 'Helfärgning', price: 'från 1200 kr', duration: '90 min' },
         { name: 'Toning (lätt färgning, som håller i 10-12 veckor)', price: '940 kr', duration: '60 min' },
       ],
     },
@@ -40,26 +40,26 @@ export default function Priser() {
     {
       category: 'Permanent',
       items: [
-        { name: 'Permanent', price: '1300 kr', duration: '120 min' },
+        { name: 'Permanent', price: 'från 1300 kr', duration: '120 min' },
       ],
     },
     {
       category: 'Slingor',
       items: [
-        { name: 'Folieslingor', price: '1300 kr', duration: '120 min' },
+        { name: 'Folieslingor', price: 'från 1300 kr', duration: '120 min' },
       ],
     },
     {
       category: 'Uppsättning',
       items: [
-        { name: 'Uppsättning', price: '600 kr', duration: '60 min' },
+        { name: 'Uppsättning', price: 'från 600 kr', duration: '60 min' },
       ],
     },
     {
       category: 'Övrigt',
       items: [
         { name: 'Ett hål (ink.örhänge)', price: '360 kr', duration: '15 min' },
-        { name: 'Två hål (ink.örhänge)', price: '450 kr', duration: '30 min' },
+        { name: 'Två hål (ink.örhängen)', price: '450 kr', duration: '30 min' },
         { name: 'Tvätt och läggning', price: '480 kr', duration: '45 min' },
       ],
     },

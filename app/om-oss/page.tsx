@@ -19,14 +19,9 @@ export default function OmOss() {
               </h2>
               <div className="space-y-4 text-lg text-primary/80 leading-relaxed">
                 <p>
-                  Salong Style grundades 2015 med en vision om att skapa en plats där hårvård möter konst. 
+                  Salong Style grundades 2014 med en vision om att skapa en plats där hårvård möter konst. 
                   Vi ville erbjuda mer än bara en frisörsalong – vi ville skapa en upplevelse där varje 
                   besök lämnar dig med både ett vackert hår och ett leende på läpparna.
-                </p>
-                <p>
-                  Med rötterna i klassisk europeisk frisörkonst och ögonen mot framtidens trender, 
-                  erbjuder vi personlig service av högsta kvalitet. Vi tror på kontinuerlig 
-                  utbildning och håller oss uppdaterade med de senaste teknikerna och produkterna inom hårvård.
                 </p>
                 <p>
                   Vår filosofi är enkel: varje kund är unik och förtjänar en personlig upplevelse. 
@@ -76,13 +71,12 @@ export default function OmOss() {
                   
                   <div className="space-y-4 text-primary/70 leading-relaxed mb-6">
                     <p>
-                      Med över 15 års erfarenhet inom hårvård och en passion för att få människor att 
+                      Med över 20 års erfarenhet inom hårvård och en passion för att få människor att 
                       känna sig vackra, grundade jag Salong Style för att skapa en plats där kvalitet 
                       och personlig service står i fokus.
                     </p>
                     <p>
-                      Jag har utbildat mig hos några av Europas ledande frisörskolor och specialiserat 
-                      mig på färgning, balayage och moderna klipptekniker. Min drivkraft är att se 
+                      Min drivkraft är att se 
                       glädje i kundens ögon när vi tillsammans hittar den perfekta looken.
                     </p>
                   </div>
@@ -90,11 +84,11 @@ export default function OmOss() {
                   <div className="grid grid-cols-2 gap-4 pt-6 border-t border-cream">
                     <div>
                       <p className="text-sm text-primary/50 font-medium mb-1">Specialitet</p>
-                      <p className="text-accent font-semibold">Färgning & Balayage</p>
+                      <p className="text-accent font-semibold">Slingning & Klippning</p>
                     </div>
                     <div>
                       <p className="text-sm text-primary/50 font-medium mb-1">Erfarenhet</p>
-                      <p className="text-accent font-semibold">15+ år</p>
+                      <p className="text-accent font-semibold">20+ år</p>
                     </div>
                   </div>
                 </div>

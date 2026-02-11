@@ -71,11 +71,11 @@ export default function Footer() {
             <ul className="space-y-2 text-cream/70 text-sm">
               <li className="flex justify-between">
                 <span>Måndag - Fredag</span>
-                <span className="font-medium">Stängt</span>
+                <span className="font-medium">Enbart bokning</span>
               </li>
               <li className="flex justify-between">
                 <span>Lördag</span>
-                <span className="font-medium">10:30 - 15:30</span>
+                <span className="font-medium">09:00 - 16:00</span>
               </li>
               <li className="flex justify-between">
                 <span>Söndag</span>

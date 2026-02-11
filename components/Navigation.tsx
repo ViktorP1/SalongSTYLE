@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation'
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [scrollY, setScrollY] = useState(0)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -57,7 +56,6 @@ export default function Navigation() {
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -86,7 +84,6 @@ export default function Navigation() {
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden text-primary focus:outline-none z-50"
@@ -112,7 +109,6 @@ export default function Navigation() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div className={`md:hidden fixed inset-0 bg-cream transform transition-transform duration-500 z-40 ${
             isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
             style={{ 

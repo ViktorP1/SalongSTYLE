@@ -64,11 +64,11 @@ export default function HittaOss() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center pb-4 border-b border-white/20">
                   <span className="font-medium">Måndag - Fredag</span>
-                  <span className="text-lg">Stängt</span>
+                  <span className="text-lg">Enbart bokning</span>
                 </div>
                 <div className="flex justify-between items-center pb-4 border-b border-white/20">
                   <span className="font-medium">Lördag</span>
-                  <span className="text-lg">10:30 - 15:30</span>
+                  <span className="text-lg">09:00 - 16:00</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="font-medium">Söndag</span>

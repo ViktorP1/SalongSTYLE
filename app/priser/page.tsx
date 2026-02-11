@@ -69,8 +69,8 @@ export default function Priser() {
     <div className="min-h-screen pt-32 pb-20">
       {/* Header */}
       <div className="bg-linear-to-br from-secondary/10 to-accent/10 py-20 mb-16">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="font-display text-6xl md:text-7xl font-bold text-primary mb-6">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight">
             Priser & Behandlingar
           </h1>
           <p className="text-xl text-primary/70 max-w-2xl mx-auto">
@@ -94,10 +94,10 @@ export default function Priser() {
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
-                    className="flex justify-between items-center py-4 border-b border-cream last:border-0 hover:bg-cream/30 px-4 rounded-lg transition-colors"
+                    className="flex justify-between items-start gap-4 py-4 border-b border-cream last:border-0 hover:bg-cream/30 px-4 rounded-lg transition-colors"
                   >
                     <div>
-                      <h3 className="font-medium text-primary mb-1">{item.name}</h3>
+                      <h3 className="font-medium text-primary mb-1 break-words">{item.name}</h3>
                       <p className="text-sm text-primary/50">{item.duration}</p>
                     </div>
                     <span className="font-display text-xl font-semibold text-secondary">

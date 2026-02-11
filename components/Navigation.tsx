@@ -121,7 +121,7 @@ export default function Navigation() {
                 height: '100vh',
                 overflowY: 'auto'
         }}>
-        <ul className="flex flex-col items-center justify-center h-full gap-8">
+        <ul className="flex flex-col items-center pt-32 gap-10">
           {navLinks.map((link, index) => (
             <li
               key={link.href}

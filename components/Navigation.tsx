@@ -11,17 +11,28 @@ export default function Navigation() {
   const pathname = usePathname()
 
   useEffect(() => {
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 50)
-    setScrollY(window.scrollY)
-  }
-  
-  window.addEventListener('scroll', handleScroll)
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
-        useEffect(() => {
-        setIsMobileMenuOpen(false)
-    }, [pathname])
+  }, [])
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isMobileMenuOpen])
 
   const navLinks = [
     { href: '/', label: 'Hem' },

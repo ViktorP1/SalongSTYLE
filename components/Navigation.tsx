@@ -20,7 +20,6 @@ export default function Navigation() {
   const navLinks = [
     { href: '/', label: 'Hem' },
     { href: '/priser', label: 'Priser & Behandlingar' },
-    { href: '/galleri', label: 'Galleri' },
     { href: '/om-oss', label: 'Om Oss' },
     { href: '/hitta-oss', label: 'Hitta Oss' },
   ]

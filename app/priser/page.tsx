@@ -68,7 +68,7 @@ export default function Priser() {
   return (
     <div className="min-h-screen pt-32 pb-20">
       {/* Header */}
-      <div className="bg-gradient-to-br from-secondary/10 to-accent/10 py-20 mb-16">
+      <div className="bg-linear-to-br from-secondary/10 to-accent/10 py-20 mb-16">
         <div className="container mx-auto px-6 text-center">
           <h1 className="font-display text-6xl md:text-7xl font-bold text-primary mb-6">
             Priser & Behandlingar

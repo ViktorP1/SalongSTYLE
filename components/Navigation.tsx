@@ -7,15 +7,21 @@ import { usePathname } from 'next/navigation'
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
   const pathname = usePathname()
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 50)
+    setScrollY(window.scrollY)
+  }
+  
+  window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    }, [])
+        useEffect(() => {
+        setIsMobileMenuOpen(false)
+    }, [pathname])
 
   const navLinks = [
     { href: '/', label: 'Hem' },
@@ -96,12 +102,14 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`md:hidden fixed inset-0 bg-cream transform transition-transform duration-500 ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-        style={{ top: '80px' }}
-      >
+      <div className={`md:hidden fixed inset-0 bg-cream transform transition-transform duration-500 z-40 ${
+            isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+            style={{ 
+                top: 0, 
+                paddingTop: '80px',
+                height: '100vh',
+                overflowY: 'auto'
+        }}>
         <ul className="flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map((link, index) => (
             <li

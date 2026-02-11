@@ -3,6 +3,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="overflow-hidden">
+      
       <section className="relative min-h-screen flex items-center justify-center bg-linear-to-br from-cream via-cream to-secondary/10">
 
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -37,7 +38,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Preview */}
+      <section className="py-6 bg-white border-y border-cream">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+            <div className="flex items-center gap-2">
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-secondary text-2xl">⭐</span>
+                ))}
+              </div>
+              <span className="font-display text-3xl font-bold text-primary">4.9</span>
+            </div>
+            
+            <div className="hidden md:block w-px h-8 bg-cream"></div>
+            
+            <p className="text-primary/70 font-medium">
+              <span className="text-primary font-semibold">173+</span> nöjda kunder
+            </p>
+            
+            <div className="hidden md:block w-px h-8 bg-cream"></div>
+            
+            <a 
+              href="https://www.bokadirekt.se/places/salong-style-12210"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:text-accent transition-colors font-medium flex items-center gap-2"
+            >
+              <span>BokaDirekt</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-linear-to-br from-secondary/5 to-accent/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">

@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 bg-gradient-to-br from-secondary/5 to-accent/5">
+      <section className="py-24 bg-linear-to-br from-secondary/5 to-accent/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-display text-5xl font-bold text-primary mb-4">Våra Tjänster</h2>
@@ -56,7 +56,6 @@ export default function Home() {
                 key={index}
                 className="bg-white p-8 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
               >
-                <div className="text-5xl mb-4">{service.emoji}</div>
                 <h3 className="font-display text-2xl font-semibold text-primary mb-2">
                   {service.name}
                 </h3>

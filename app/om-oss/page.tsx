@@ -37,7 +37,7 @@ export default function OmOss() {
             </div>
 
             <div className="order-1 md:order-2">
-              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-125 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/salong.jpg"
                   alt="Salong Style interiör"

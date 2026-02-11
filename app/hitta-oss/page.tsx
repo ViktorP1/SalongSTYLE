@@ -6,7 +6,7 @@ export const metadata = {
 export default function HittaOss() {
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <div className="bg-gradient-to-br from-secondary/10 to-accent/10 py-20 mb-16">
+      <div className="bg-linear-to-br from-secondary/10 to-accent/10 py-20 mb-16">
         <div className="container mx-auto px-6 text-center">
           <h1 className="font-display text-6xl md:text-7xl font-bold text-primary mb-3">
             Hitta Oss
@@ -59,7 +59,7 @@ export default function HittaOss() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-secondary to-accent text-white rounded-2xl p-10 shadow-lg">
+            <div className="bg-linear-to-br from-secondary to-accent text-white rounded-2xl p-10 shadow-lg">
               <h2 className="font-display text-3xl font-bold mb-6">Öppettider</h2>
               <div className="space-y-4">
                 <div className="flex justify-between items-center pb-4 border-b border-white/20">

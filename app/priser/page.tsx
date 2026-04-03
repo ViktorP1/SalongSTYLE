@@ -97,7 +97,7 @@ export default function Priser() {
                     className="flex justify-between items-start gap-4 py-4 border-b border-cream last:border-0 hover:bg-cream/30 px-4 rounded-lg transition-colors"
                   >
                     <div>
-                      <h3 className="font-medium text-primary mb-1 break-words">{item.name}</h3>
+                      <h3 className="font-medium text-primary mb-1 wrap-break-word">{item.name}</h3>
                       <p className="text-sm text-primary/50">{item.duration}</p>
                     </div>
                     <span className="font-display text-xl font-semibold text-secondary">

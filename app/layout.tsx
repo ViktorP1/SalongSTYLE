@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
+const libreBaskerville = Libre_Baskerville({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+    variable: "--font-display",
+  });
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+  const sourceSans = Source_Sans_3({
+    subsets: ["latin"],
+    variable: "--font-sans",
+  });
 
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function RootLayout({
     <html lang="sv">
       <body>
         <Navigation />
-        <main className={`${playfair.variable} ${inter.variable} font-sans`}>
+        <main className={`${libreBaskerville.variable} ${sourceSans.variable} font-sans`}>
           {children}
         </main>
         <Footer />

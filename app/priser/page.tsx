@@ -58,8 +58,6 @@ export default function Priser() {
     {
       category: 'Övrigt',
       items: [
-        { name: 'Ett hål (ink.örhänge)', price: '360 kr', duration: '15 min' },
-        { name: 'Två hål (ink.örhängen)', price: '450 kr', duration: '30 min' },
         { name: 'Tvätt och läggning', price: '480 kr', duration: '45 min' },
       ],
     },
